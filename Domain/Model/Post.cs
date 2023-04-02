@@ -1,11 +1,16 @@
-﻿namespace Shared;
+﻿using System.Text.Json.Serialization;
+
+namespace Shared;
 
 public class Post
 {
-    public string post;
-    public User user;
+    public string post  { get; set; }
+    public User user  { get; set; }
+    public int Id  { get; set; }
 
-    public Post(string post, User user)
+    // [JsonConstructor]
+    // public Post(){}
+    public Post(User user, string post )
     {
         this.post = post;
         this.user = user;
