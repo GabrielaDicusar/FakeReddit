@@ -1,0 +1,58 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "UserName": "Gabriela"
+    },
+    {
+      "Id": 2,
+      "UserName": "Lorenzo"
+    },
+    {
+      "Id": 3,
+      "UserName": "Sergei"
+    },
+    {
+      "Id": 4,
+      "UserName": "Lol"
+    },
+    {
+      "Id": 5,
+      "UserName": "Karmen"
+    }
+  ],
+  "Posts": [
+    {
+      "post": "I am just trying to survive these days",
+      "user": {
+        "Id": 1,
+        "UserName": "Gabriela"
+      },
+      "Id": 1
+    },
+    {
+      "post": "I am am the Russian mafia",
+      "user": {
+        "Id": 3,
+        "UserName": "Sergei"
+      },
+      "Id": 2
+    },
+    {
+      "post": "I totally support Sergei on his decision",
+      "user": {
+        "Id": 1,
+        "UserName": "Gabriela"
+      },
+      "Id": 3
+    },
+    {
+      "post": "We tolerate too much nowadays @Gabriela and @Sergei",
+      "user": {
+        "Id": 2,
+        "UserName": "Lorenzo"
+      },
+      "Id": 4
+    }
+  ]
+}
