@@ -32,6 +32,13 @@ public class PostFileDao : IPostDao
         
     }
 
+    public async Task<IEnumerable<Post>> GetAllPosts()
+    {
+        var result =  context.Posts.AsEnumerable();
+        result = context.Posts;
+        return result;
+    }
+
     public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParameters)
     {
         Console.WriteLine("Got to PostFileDao");

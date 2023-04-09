@@ -44,6 +44,7 @@
   "Posts": [
     {
       "post": "I am just trying to survive these days",
+      "title": null,
       "user": {
         "Id": 1,
         "UserName": "Gabriela",
@@ -53,6 +54,7 @@
     },
     {
       "post": "I am am the Russian mafia",
+      "title": null,
       "user": {
         "Id": 3,
         "UserName": "Sergei",
@@ -62,6 +64,7 @@
     },
     {
       "post": "I totally support Sergei on his decision",
+      "title": null,
       "user": {
         "Id": 1,
         "UserName": "Gabriela",
@@ -71,12 +74,53 @@
     },
     {
       "post": "We tolerate too much nowadays @Gabriela and @Sergei",
+      "title": null,
       "user": {
         "Id": 2,
         "UserName": "Lorenzo",
         "Password": null
       },
       "Id": 4
+    },
+    {
+      "post": "Ha ha",
+      "title": null,
+      "user": {
+        "Id": 7,
+        "UserName": "Marcel",
+        "Password": "1234"
+      },
+      "Id": 5
+    },
+    {
+      "post": "Ha ha",
+      "title": null,
+      "user": {
+        "Id": 7,
+        "UserName": "Marcel",
+        "Password": "1234"
+      },
+      "Id": 6
+    },
+    {
+      "post": "God",
+      "title": null,
+      "user": {
+        "Id": 6,
+        "UserName": "Korra",
+        "Password": "avatar"
+      },
+      "Id": 7
+    },
+    {
+      "post": "work?",
+      "title": "Does it",
+      "user": {
+        "Id": 1,
+        "UserName": "Gabriela",
+        "Password": null
+      },
+      "Id": 8
     }
   ]
 }

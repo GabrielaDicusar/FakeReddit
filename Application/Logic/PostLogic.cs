@@ -26,7 +26,7 @@ public class PostLogic : IPostLogic
         }
 
         ValidatePost(dto);
-        Post post = new Post(user, dto.Title );
+        Post post = new Post(user, dto.Title, dto.Post );
         Post created = await postDao.CreateAsync(post);
         return created;
     }
