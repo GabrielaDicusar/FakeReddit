@@ -18,6 +18,9 @@
 
     <ItemGroup>
       <None Remove="Pages\CreateUser.css" />
+      <None Update="Pages\LoginButtons.razor.css">
+        <DependentUpon>LoginButtons.razor</DependentUpon>
+      </None>
     </ItemGroup>
 
 </Project>
