@@ -2,23 +2,33 @@
   "Users": [
     {
       "Id": 1,
-      "UserName": "Gabriela"
+      "UserName": "Gabriela",
+      "Password": null
     },
     {
       "Id": 2,
-      "UserName": "Lorenzo"
+      "UserName": "Lorenzo",
+      "Password": null
     },
     {
       "Id": 3,
-      "UserName": "Sergei"
+      "UserName": "Sergei",
+      "Password": null
     },
     {
       "Id": 4,
-      "UserName": "Lol"
+      "UserName": "Lol",
+      "Password": null
     },
     {
       "Id": 5,
-      "UserName": "Karmen"
+      "UserName": "Karmen",
+      "Password": null
+    },
+    {
+      "Id": 6,
+      "UserName": "Korra",
+      "Password": "avatar"
     }
   ],
   "Posts": [
@@ -26,7 +36,8 @@
       "post": "I am just trying to survive these days",
       "user": {
         "Id": 1,
-        "UserName": "Gabriela"
+        "UserName": "Gabriela",
+        "Password": null
       },
       "Id": 1
     },
@@ -34,7 +45,8 @@
       "post": "I am am the Russian mafia",
       "user": {
         "Id": 3,
-        "UserName": "Sergei"
+        "UserName": "Sergei",
+        "Password": null
       },
       "Id": 2
     },
@@ -42,7 +54,8 @@
       "post": "I totally support Sergei on his decision",
       "user": {
         "Id": 1,
-        "UserName": "Gabriela"
+        "UserName": "Gabriela",
+        "Password": null
       },
       "Id": 3
     },
@@ -50,7 +63,8 @@
       "post": "We tolerate too much nowadays @Gabriela and @Sergei",
       "user": {
         "Id": 2,
-        "UserName": "Lorenzo"
+        "UserName": "Lorenzo",
+        "Password": null
       },
       "Id": 4
     }
