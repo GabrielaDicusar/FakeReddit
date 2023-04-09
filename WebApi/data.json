@@ -29,6 +29,16 @@
       "Id": 6,
       "UserName": "Korra",
       "Password": "avatar"
+    },
+    {
+      "Id": 7,
+      "UserName": "Marcel",
+      "Password": "1234"
+    },
+    {
+      "Id": 8,
+      "UserName": "Idk",
+      "Password": "1234"
     }
   ],
   "Posts": [

@@ -33,6 +33,23 @@ public class UserLogic: IUserLogic
         return created;
     }
     
+    public async Task<User> ValidateUser(UserCreationDto dto)
+    {
+        User? existingUser = await userDao.GetByUsernameAsync(dto.UserName);
+        
+        if (existingUser == null)
+        {
+            throw new Exception("User not found");
+        }
+    
+        if (!existingUser.Password.Equals(dto.Password))
+        {
+            throw new Exception("Password mismatch");
+        }
+    
+        return await Task.FromResult(existingUser);
+    }
+    
     private static void ValidateData(UserCreationDto userToCreate)
     {
         string userName = userToCreate.UserName;
@@ -41,7 +58,6 @@ public class UserLogic: IUserLogic
 
         if (userName.Length < 3)
             throw new Exception("Username must be at least 3 characters!");
-
         if (userName.Length > 15)
             throw new Exception("Username must be less than 16 characters!");
         if (password.Length < 3)
