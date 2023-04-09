@@ -39,6 +39,21 @@
       "Id": 8,
       "UserName": "Idk",
       "Password": "1234"
+    },
+    {
+      "Id": 9,
+      "UserName": "admin",
+      "Password": "admin"
+    },
+    {
+      "Id": 10,
+      "UserName": "Gregor",
+      "Password": "1234"
+    },
+    {
+      "Id": 11,
+      "UserName": "Anastasia",
+      "Password": "1234"
     }
   ],
   "Posts": [
