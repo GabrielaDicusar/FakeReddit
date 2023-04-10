@@ -136,6 +136,26 @@
         "Password": null
       },
       "Id": 8
+    },
+    {
+      "post": "It\u0027s almost 1 am",
+      "title": "Sadness",
+      "user": {
+        "Id": 9,
+        "UserName": "admin",
+        "Password": "admin"
+      },
+      "Id": 9
+    },
+    {
+      "post": "I still have to do view posts",
+      "title": "Double sadness",
+      "user": {
+        "Id": 9,
+        "UserName": "admin",
+        "Password": "admin"
+      },
+      "Id": 10
     }
   ]
 }

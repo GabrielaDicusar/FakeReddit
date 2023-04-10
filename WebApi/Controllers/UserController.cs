@@ -26,15 +26,15 @@ public class UserController : ControllerBase
     
     private List<Claim> GenerateClaims(User user)
     {
+        string ID = user.Id.ToString();
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            // new Claim(ClaimTypes.Name, user.UserName),
-            new Claim("UserName", user.UserName),
-            new Claim("Password", user.Password),
-            // new Claim(ClaimTypes.Role, user.Role),
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.PostalCode, user.Password),
+            new Claim(ClaimTypes.Sid, ID)
             // new Claim("DisplayName", user.Name),
             // new Claim("Email", user.Email),
             // new Claim("Age", user.Age.ToString()),

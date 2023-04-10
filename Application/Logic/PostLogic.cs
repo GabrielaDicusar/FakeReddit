@@ -36,6 +36,11 @@ public class PostLogic : IPostLogic
         return postDao.GetAsync(searchPostParameters);
     }
 
+    public Task<IEnumerable<Post>> GetAllPosts()
+    {
+        return postDao.GetAllPosts();
+    }
+
     private void ValidatePost(PostCreationDto dto)
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("Title cannot be empty.");

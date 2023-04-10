@@ -105,7 +105,10 @@ public class UserHttpClient : IUserService
 
     public Task LogoutAsync()
     {
-        throw new NotImplementedException();
+        Jwt = null;
+        ClaimsPrincipal principal = new();
+        OnAuthStateChanged.Invoke(principal);
+        return Task.CompletedTask;
     }
 
     public Task<ClaimsPrincipal> GetAuthAsync()
