@@ -59,7 +59,7 @@
   "Posts": [
     {
       "post": "I am just trying to survive these days",
-      "title": null,
+      "title": "It is what it is",
       "user": {
         "Id": 1,
         "UserName": "Gabriela",
@@ -69,7 +69,7 @@
     },
     {
       "post": "I am am the Russian mafia",
-      "title": null,
+      "title": "Have you heard the joke about the chicken?",
       "user": {
         "Id": 3,
         "UserName": "Sergei",
@@ -79,7 +79,7 @@
     },
     {
       "post": "I totally support Sergei on his decision",
-      "title": null,
+      "title": "Hehe",
       "user": {
         "Id": 1,
         "UserName": "Gabriela",
@@ -89,7 +89,7 @@
     },
     {
       "post": "We tolerate too much nowadays @Gabriela and @Sergei",
-      "title": null,
+      "title": "Lalala",
       "user": {
         "Id": 2,
         "UserName": "Lorenzo",
@@ -99,7 +99,7 @@
     },
     {
       "post": "Ha ha",
-      "title": null,
+      "title": "The chicken joke was good",
       "user": {
         "Id": 7,
         "UserName": "Marcel",
@@ -109,7 +109,7 @@
     },
     {
       "post": "Ha ha",
-      "title": null,
+      "title": "Ok",
       "user": {
         "Id": 7,
         "UserName": "Marcel",
@@ -119,7 +119,7 @@
     },
     {
       "post": "God",
-      "title": null,
+      "title": "Good",
       "user": {
         "Id": 6,
         "UserName": "Korra",

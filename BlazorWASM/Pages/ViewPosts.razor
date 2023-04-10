@@ -2,7 +2,7 @@
 @using global::Shared
 @using HttpClients.ClientInterfaces
 @inject IPostService PostService
-<h3>ViewPosts</h3>
+<h3>Take a look at what people have been saying</h3>
 <div>
     <button @onclick="LoadPosts">Load</button>
 </div>
@@ -12,31 +12,53 @@
 }
 else if (!posts.Any())
 {
-    <p>No Todos to display</p>
+    <p>No Posts to display</p>
 }
 else
 {
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Todo ID</th>
-            <th>Owner ID</th>
-            <th>Title</th>
-            <th>Post</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in posts)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.user.UserName</td>
-                <td>@item.title</td>
-                <td>@item.post</td>
-            </tr>
-        }
-        </tbody>
-    </table>
+    @* <table class="table"> *@
+    @*     <thead> *@
+    @*     <tr> *@
+    @*         <th>Todo ID</th> *@
+    @*         <th>Owner ID</th> *@
+    @*         <th>Title</th> *@
+    @*         <th>Post</th> *@
+    @*     </tr> *@
+    @*     </thead> *@
+    @* <tbody> *@
+    const int postsPerRow = 4;
+    var postList = new List<Post>();
+    var postCount = posts.Count();
+    
+    @for(int i = 0; i<postCount; i++)
+    {
+        postList = posts.Skip(i * postsPerRow).Take(postsPerRow).ToList();
+        <div class="row mt-3">
+             @if (postCount > 0)
+                {
+                    @foreach(var post in postList)
+                    {
+                        <div class=" col-md-3 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">
+                                    @post.title
+                                </h5>
+                                <p class="card-text">
+                                    @post.user.UserName
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    }
+            
+                }
+        </div>
+
+    }
+
+        // </tbody>
+    // </table>
 }
 @if (!string.IsNullOrEmpty(msg))
 {
