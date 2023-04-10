@@ -1,0 +1,61 @@
+﻿@page "/ViewPosts"
+@using global::Shared
+@using HttpClients.ClientInterfaces
+@inject IPostService PostService
+<h3>ViewPosts</h3>
+<div>
+    <button @onclick="LoadPosts">Load</button>
+</div>
+
+@if (posts == null)
+{
+}
+else if (!posts.Any())
+{
+    <p>No Todos to display</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Todo ID</th>
+            <th>Owner ID</th>
+            <th>Title</th>
+            <th>Post</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in posts)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.user.UserName</td>
+                <td>@item.title</td>
+                <td>@item.post</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
+
+    private async Task LoadPosts()
+    {
+        try
+        {
+            posts = await PostService.GetAsync(null, null,  null);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+}
