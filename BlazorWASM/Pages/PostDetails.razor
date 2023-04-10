@@ -1,0 +1,21 @@
+﻿@page "/PostDetails/{Id:int}"
+@using System.Runtime.InteropServices.JavaScript
+@inherits BlazorWasm.Pages.PostDetailsBase
+@if (Post == null && ErrorMessage == null)
+{
+    <h3>Loading post...</h3>
+}
+else if (ErrorMessage != null)
+{
+    <h3 class="text-danger">@ErrorMessage</h3>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h3>@Post.title</h3>
+            <h3>@Post.post</h3>
+            <p>@Post.user.UserName</p>
+        </div>
+    </div>
+}

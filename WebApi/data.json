@@ -54,6 +54,11 @@
       "Id": 11,
       "UserName": "Anastasia",
       "Password": "1234"
+    },
+    {
+      "Id": 12,
+      "UserName": "Anett",
+      "Password": "1234"
     }
   ],
   "Posts": [
@@ -156,6 +161,16 @@
         "Password": "admin"
       },
       "Id": 10
+    },
+    {
+      "post": "There",
+      "title": "Hello",
+      "user": {
+        "Id": 12,
+        "UserName": "Anett",
+        "Password": "1234"
+      },
+      "Id": 11
     }
   ]
 }
