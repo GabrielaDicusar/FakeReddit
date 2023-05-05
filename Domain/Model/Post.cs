@@ -1,13 +1,15 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Shared;
 
 public class Post
 {
-    public string post  { get; set; }
-    public string title { get; set; }
-    public User user  { get; set; }
+    
     public int Id  { get; set; }
+    public string post  { get; private set; }
+    public string title { get; private set; }
+    public User user  { get; set; }
 
     // [JsonConstructor]
     // public Post(){}
@@ -17,4 +19,8 @@ public class Post
         this.post = post;
         this.user = user;
     }
+    
+    public Post(){}
+    
+    
 }
